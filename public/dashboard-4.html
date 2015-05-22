@@ -8,7 +8,7 @@
     <meta name="description" content="Xenon Boostrap Admin Panel" />
     <meta name="author" content="" />
 
-    <title>Xenon - Dashboard 4</title>
+    <title>Ford</title>
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
     <link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
@@ -173,7 +173,7 @@ $(function () {
             }]
         });
 
-        $('#container-panel-current').highcharts({
+        $('#container-tachometer').highcharts({
             chart: {
                 type: 'spline',
                 animation: Highcharts.svg, // don't animate in old IE
@@ -198,7 +198,7 @@ $(function () {
                 }
             },
             title: {
-                text: 'Building Consumption (watts)'
+                text: 'Tachometer (rpm)'
             },
             xAxis: {
                 type: 'datetime',
@@ -206,7 +206,7 @@ $(function () {
             },
             yAxis: {
                 title: {
-                    text: 'watts'
+                    text: 'rpm'
                 },
                 plotLines: [{
                     value: 0,
@@ -228,7 +228,7 @@ $(function () {
                 enabled: false
             },
             series: [{
-                name: 'watts',
+                name: 'rpm',
                 data: (function () {
                     // generate an array of random data
                     var data = [],
